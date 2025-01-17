@@ -1,9 +1,9 @@
-import * as express from "express"; // Adjust the path to match your project structure
+import * as express from "express";
 
 declare global {
   namespace Express {
     interface Request {
-      user?: any; // Replace UserDocument with the type from your User model
+      user?: any;
     }
   }
 }

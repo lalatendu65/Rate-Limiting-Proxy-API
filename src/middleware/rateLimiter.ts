@@ -11,8 +11,7 @@ export const rateLimiter = async (
 ): Promise<void> => {
   try {
     const appId = req.params.appId;
-    // console.log(req.user);
-    const userId = req.user?._id; // Ensure `req.user` exists if it's optional
+    const userId = req.user?._id;
     if (!userId) {
       res.status(401).json({ error: "Unauthorized: User not authenticated" });
       return;
