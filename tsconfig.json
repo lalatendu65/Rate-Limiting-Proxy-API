@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",  
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    
+  },
+"files": ["./src/types/express.d.ts"],
+  "typeRoots": ["./node_modules/@types", "./src/types"],
+  "exclude": ["node_modules"]
+}
